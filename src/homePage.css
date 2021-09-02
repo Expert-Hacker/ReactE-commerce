@@ -1,0 +1,179 @@
+.home_cont{
+    height: 100%;
+}
+.home_cont .imageSec img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    /* display: block; */
+}
+.home_cont .explore{
+    display: flex;
+    justify-content: center;
+}
+.home_cont .explore button{
+    position: absolute;
+    /* left: 50%;
+    right: 50%; */
+   
+color: white;
+font-weight: 800;
+    top: 65%;
+    text-align: center;
+    padding: 10px 70px 10px 70px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid yellow
+   
+}
+.home_cont .container .controls{
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto; 
+}
+.home_cont .container .controls select{
+    color: white;
+    border-radius: 3px;
+    background-color: rgb(159, 130, 238);
+    height: 35px;
+    width:200px ;
+  margin-top: 37px;
+}
+.home_cont .container .controls label{
+   margin-right: 25px;
+}
+.home_cont .container .controls .labels_select{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-between;
+}
+.home_cont .imageSec .container .left a{
+    background: #DA22FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.products_tit{
+    font-family: 'Georama', sans-serif;
+}
+.backtotop{
+    position: fixed;
+   bottom: 0px;
+   right: 2px;
+}
+.backtotop a{
+        background-color: rgb(201, 201, 201);
+        padding: 15px 13px 15px 13px;
+        border-top-left-radius:5px ;
+        border-top-right-radius:5px ;
+}
+.scroll-downs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    
+    width :34px;
+    height: 55px;
+   
+  }
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: rgb(0, 0, 0);
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }
+  .thumbnail:hover {
+cursor: pointer;
+}
+@media only screen and (max-width:410px) {
+    .home_cont .explore button{
+        top: 30%;
+        padding: 5px 15px 5px 15px;
+        font-weight: normal;
+        font-size: 9px;
+        bottom: none;
+        outline: none;
+        border-radius: 3px;
+    }
+    .home_cont .container .controls h1{
+        font-size: 22px;
+    }
+    .home_cont .container .controls select{
+        color: white;
+        border-radius: 3px;
+        background-color: rgb(159, 130, 238);
+        height: 26px;
+        width:120px ;
+        /* margin-top: auto;
+        margin-bottom: auto; */
+        /* margin-top: 28px; */
+    }
+    .home_cont .container .controls .labels_select{
+       
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        
+    }
+    .home_cont .container .controls .labels_select label{
+        padding: 0px 0px 0px 0px;
+        margin-right: 5px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .backtotop a{
+        background-color: rgb(201, 201, 201);
+        padding: 14px 9px 9px 9px;
+        font-size: 14px;
+        border-top-left-radius:5px ;
+        border-top-right-radius:5px ;
+    }
+    .home_cont .imageSec .container .left h1{
+        font-size: 42px;
+        text-align: center;
+    }
+    .home_cont .imageSec .container .left{
+        align-items: center;
+        text-align: center;
+    }
+    .home_cont .imageSec .container .right{
+        width: 96vw;
+    }
+    .scroll-downs{
+        display: none;
+    }
+}

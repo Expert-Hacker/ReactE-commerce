@@ -1,0 +1,17 @@
+.container1{
+ height: 90vh;
+ width: 100vw;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+    /* background-color: red; */
+}
+.container1 .image{
+    background: url('./images/232.jpg');
+    background-position: center;
+    height: 80%;
+    width: 80%;
+    background-size: cover;
+    
+    
+}

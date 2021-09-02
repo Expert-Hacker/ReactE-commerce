@@ -1,0 +1,140 @@
+
+.container1{
+   height: 80vh;
+   width: 100vw;
+
+   display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.container1 .left1{
+    height: 70vh;
+    width: 40vw;
+    margin: auto;
+   
+}
+.container1 .right1{
+    height: 70vh;
+    width: 40vw;
+   overflow: auto;
+    display: block;
+}
+.item_title, .related_item{
+    font-family: 'Georama', sans-serif;
+  
+}
+.saved_price{
+    opacity: 0.7 !important;
+}
+.rotate_icon {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.rotate_icon{
+  font-size: 33px;
+}
+.spinner_cont{
+  display: flex;
+ height: 80vh;
+ width: 100vw;
+ justify-content: center;
+ align-items: center;
+
+  
+}
+
+
+    /* --------------------------- RESPONSIVE CODE -------------------------- */
+    @media  only screen and (max-width:410px) {
+        .container1{
+            height: 80vh;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            align-content: center;
+            flex-wrap: nowrap;
+            margin: auto;
+        }
+        .container1 .left1{
+          margin-top: 30px;
+          margin-bottom: 10px;
+            height: 70vh;
+            width: 90vw;
+            margin: auto;
+        }
+        .container1 .right1{
+            width: 90vw;
+            margin: auto;
+            /* height: 20vh; */
+            display: block;
+            height: auto;
+            overflow: auto;
+        }
+        .details{
+            margin: 0px !important;
+        }
+        .container1 .left1 img{
+            height: 300px !important;
+            width: 300px !important;
+         
+        }
+        .relaetd_items{
+          /* float: right; */
+            position: absolute;
+         
+        }
+        .addCart{
+            margin-bottom: 10px;
+        }
+        
+          .scroll-downs {
+            /* ---------- position: relative; set to absolute to came on image ---------- */
+            position: relative;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+          
+            width :34px;
+            height: 55px;
+          }
+          .mousey {
+            width: 3px;
+            padding: 8px 13px;
+            height: 35px;
+            border: 3px solid rgb(0, 0, 0);
+            border-radius: 25px;
+            opacity: 0.8;
+            box-sizing: content-box;
+          }
+          .scroller {
+            width: 3px;
+            height: 10px;
+            border-radius: 25%;
+            background-color: rgb(0, 0, 0);
+            animation-name: scroll;
+            animation-duration: 2.2s;
+            animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+            animation-iteration-count: infinite;
+          }
+          @keyframes scroll {
+            0% { opacity: 0; }
+            10% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(15px); opacity: 0;}
+          }
+        
+    }

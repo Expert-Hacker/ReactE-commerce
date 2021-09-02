@@ -1,0 +1,132 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.head_cont{
+    background-color: black;
+    /* position: fixed; */
+    z-index: 1;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    
+}
+.head_cont .container{
+    display: flex;
+    justify-content: space-between;
+}
+.head_cont .container .right ul{
+    display: flex;
+}
+.head_cont .container .right ul .header_links{
+    padding: 25px 0px 7px 0px !important;
+    font-size: 22px;
+   
+}
+.head_cont .container .right ul .link{
+    text-decoration: none;
+    color: white;
+    /* display: none; */
+}
+.head_cont .container .left .logo{
+    font-family: 'Righteous', cursive;
+    padding: 25px 0px 25px 0px !important;
+    font-size: 26px; 
+    list-style: none;   
+}
+/* ------------------------------ HOVER EFFECTS ----------------------------- */
+.head_cont .container .right ul .link:hover{
+    color: rgb(231, 231, 231) !important;
+    cursor: pointer;
+}
+.head_cont .container .left .logo:hover{
+    color: white !important;
+    cursor: pointer;
+}
+.head_cont .container .right ul .cart_icon:hover{
+    cursor: pointer;
+    color: rgb(219, 219, 219) !important;
+}
+.container_top{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+ display: flex;
+ flex-direction: row;
+ height: auto;
+    
+}
+.home_cont .imageSec .container_top .right{
+    height: 64vh;
+    width: 60vw;
+}
+
+
+.home_cont .imageSec .container_top .left{
+    display: flex;
+    
+    flex-direction: column;
+justify-content:center;
+align-items: flex-start;
+}
+.home_cont .imageSec .container_top .left h1{
+font-family: 'Acme', sans-serif;
+}
+.home_cont .imageSec .container_top .left button{
+    padding: 7px 35px 7px 35px;
+    border-radius: 5px;
+    color: white;
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.badge{
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    top: 20px;
+}
+.head_cont .container .right ul .cart_icon_resp{
+    display: none;
+}
+li{
+    list-style: none;
+}
+.text-white{
+    list-style: none;
+    text-decoration: none;
+}
+    /* -------------------------- HEADER RESPOSIVE CODE ------------------------- */
+@media only screen and (max-width:410px){
+    .head_cont .container .right ul .header_links{
+        display: none;
+    }
+
+    .head_cont .container .left .logo{
+        font-family: 'Righteous', cursive;
+        padding: 12px 0px 12px 0px !important;
+        font-size: 27px !important; 
+        list-style: none;   
+    }
+    .head_cont .container .right ul .cart_icon, .cart_icon_resp{
+        font-size: 21px !important;
+        padding: 17px 0px 10px 0px !important;
+        font-size: 24px !important; 
+        /* margin-right: 10px !; */
+    }
+    .head_cont .container .right ul .cart_icon_resp{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .container_top{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+           
+       }
+       .badge{
+        background-color: rgb(255, 0, 0);
+        position: absolute;
+        top: 10px;
+        right: 10px !important;
+}
+}
